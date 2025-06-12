@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poloko Baboile | Aspiring Cloud Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 font-sans transition-colors duration-500 overflow-x-hidden">
+    <!-- Animated Background Elements -->
+    <div class="particles"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto px-6 py-12 relative z-10">
+
+      <!-- 3D Animated Header -->
+      <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 animate__animated animate__fadeInDown">
+        <div class="flex items-center gap-6">
+          <div class="header-3d">
+            <h1 class="name-heading animate__animated animate__fadeIn">
+              POLOKO BABOILE
+            </h1>
+            <p class="tagline animate__animated animate__fadeIn animate__delay-1s">
+              Building cloud solutions that scale infinitely
+            </p>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-4 mt-6 md:mt-0">
+          <button id="themeToggle" class="theme-toggle-btn p-3 rounded-full bg-white/80 dark:bg-gray-700/80 backdrop-blur-md shadow-lg hover:scale-110 transition-all">
+            <i class="fas fa-moon dark:hidden text-blue-600"></i>
+            <i class="fas fa-sun hidden dark:block text-yellow-400"></i>
+          </button>
+          <div class="hamburger-menu cursor-pointer" id="menuToggle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Floating Navigation (Appears on menu click) -->
+      <nav class="floating-nav hidden fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md">
+        <ul class="text-center space-y-8">
+          <li><a href="#about" class="nav-link text-4xl font-bold hover:text-blue-500 transition-all">About</a></li>
+          <li><a href="#certificates" class="nav-link text-4xl font-bold hover:text-purple-500 transition-all">Certificates</a></li>
+          <li><a href="#projects" class="nav-link text-4xl font-bold hover:text-teal-500 transition-all">Projects</a></li>
+          <li><a href="#contact" class="nav-link text-4xl font-bold hover:text-green-500 transition-all">Contact</a></li>
+        </ul>
+        <button class="close-nav absolute top-8 right-8 text-3xl">✕</button>
+      </nav>
+
+      <!-- About Section with Animated Profile -->
+      <section id="about" class="mb-24 p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-blue-500/20 dark:hover:shadow-purple-500/20 transition-all duration-500 animate__animated animate__fadeIn">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <div class="profile-animation w-64 h-64 relative flex-shrink-0">
+            <div class="profile-circle overflow-hidden">
+        <img src="./images/IMG_20230919_102252.jpg" alt="Profile" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Tech Icons (spinning around image) -->
+      <div class="tech-icons">
+        <i class="fab fa-aws icon-1"></i>
+        <i class="fab fa-google icon-2"></i>
+        <i class="fab fa-docker icon-3"></i>
+        <i class="fab fa-python icon-4"></i>
+        <i class="fab fa-js icon-5"></i>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-3xl font-semibold mb-6 border-b pb-2 border-gray-200 dark:border-gray-700 inline-block">Aspiring Cloud Engineer</h2>
+            <p class="mb-6 text-lg leading-relaxed">I specialize in building <span class="text-gradient">scalable cloud architectures</span> that leverage the full potential of modern cloud platforms. With expertise in <span class="text-gradient">GCP, Azure, and AWS Platforms </span>, I create solutions that are both powerful and cost-efficient.</p>
+            <div class="skills-cloud">
+              <span class="skill-tag">GCP Solutions</span>
+              <span class="skill-tag">Azure Solutions</span>
+              <span class="skill-tag">Terraform</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Cloud Functions</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Serverless</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certificates Section -->
+      <section id="certificates" class="mb-24 p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-purple-500/20 transition-all duration-500">
+        <h2 class="text-3xl font-semibold mb-12 border-b pb-2 border-gray-200 dark:border-gray-700">Certifications</h2>
+        <d class="grid md:grid-cols-2 gap-8">
+          <!-- Certificate Card 1 -->
+          <div class="certificate-card p-6 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-800 shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-start gap-4">
+              <div class="certificate-icon bg-blue-100 dark:bg-blue-900 p-3 rounded-lg">
+                <i class="fab fa-microsoft text-blue-600 dark:text-blue-300 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Microsoft Certified: Azure Fundamentals</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3"></p>
+                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  <i class="fas fa-calendar-alt mr-2"></i>
+                  <span>Issued: June 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate Card 2 -->
+          <div class="certificate-card p-6 rounded-xl bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-gray-700 dark:to-gray-800 shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-start gap-4">
+              <div class="certificate-icon bg-yellow-100 dark:bg-yellow-900 p-3 rounded-lg">
+                <i class="fab fa-microsoft text-blue-600 dark:text-blue-300 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Microsoft Certified: Security Compliance and Identity Fundamentals </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3"></p>
+                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  <i class="fas fa-calendar-alt mr-2"></i>
+                  <span>Issued: June 2024</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         <!-- Certificate Card 3 -->
+          <div class="certificate-card p-6 rounded-xl bg-gradient-to-br from-yellow-50 to-yellow-100 dark:from-gray-700 dark:to-gray-800 shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-start gap-4">
+              <div class="certificate-icon bg-yellow-100 dark:bg-yellow-900 p-3 rounded-lg">
+                <i class="fab fa-microsoft text-blue-600 dark:text-blue-300 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Microsoft Certified: Security Compliance and Identity Fundamentals </h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3"></p>
+                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  <i class="fas fa-calendar-alt mr-2"></i>
+                  
+                  <span>Issued: June 2024</span>
+                   </div>
+              </div>
+            </div>
+          </div>
+
+                        <!-- Certificate Card 4 -->
+          <div class="certificate-card p-6 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-800 shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-start gap-4">
+              <div class="certificate-icon bg-blue-100 dark:bg-blue-900 p-3 rounded-lg">
+                <i class="fab fa-microsoft text-blue-600 dark:text-blue-300 text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold mb-2">Microsoft Certified: Configure SIEM security operations using Microsoft Sentinel</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-3"></p>
+                <div class="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                  <i class="fas fa-calendar-alt mr-2"></i>
+                  <span>Issued: July 2024</span>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="mb-24">
+        <h2 class="text-3xl font-semibold mb-12 border-b pb-2 border-gray-200 dark:border-gray-700">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-bg bg-gradient-to-br from-blue-400 to-blue-600"></div>
+            <div class="project-content">
+              <div class="project-icon">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <h3 class="project-title">Serverless Weather</h3>
+              <p class="project-description">Real-time weather dashboard with predictive analytics built on Google Cloud Functions and API Gateway.</p>
+              <div class="project-tags">
+                <span>Google Cloud Functions</span>
+                <span>API Gateway</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link">Live Demo</a>
+                <a href="#" class="project-link">Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="project-bg bg-gradient-to-br from-purple-400 to-purple-600"></div>
+            <div class="project-content">
+              <div class="project-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h3 class="project-title">Infrastructure as Code(IaC): Infrastructure Automation</h3>
+              <p class="project-description">  <div class="project-tags">Building Infrastructure with Terraform on  Google Cloud Platform.</div></p>
+              <div class="project-tags">
+                <span>GCP</span>
+                <span>Docker</span>
+                <span>Terraform</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link">Case Study</a>
+                <a href="#" class="project-link">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="project-bg bg-gradient-to-br from-teal-400 to-teal-600"></div>
+            <div class="project-content">
+              <div class="project-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="project-title">Security Information and Event Management</h3>
+              <p class="project-description">Microsoft</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Cloud Functions</span>
+                <span>Security</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link">Documentation</a>
+                <a href="#" class="project-link">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interactive Contact Section -->
+      <section id="contact" class="p-8 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md rounded-3xl shadow-2xl hover:shadow-teal-500/20 transition-all duration-500">
+        <h2 class="text-3xl font-semibold mb-8 border-b pb-2 border-gray-200 dark:border-gray-700 inline-block">Let's Connect</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="contact-form">
+            <form id="contactForm" class="space-y-6">
+              <div class="form-group floating-input">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-input">
+                <input type="email" id="email" required>
+                <label for="email">Email Address</label>
+                <div class="underline"></div>
+              </div>
+              <div class="form-group floating-input">
+                <textarea id="message" rows="4" required></textarea>
+                <label for="message">Your Message</label>
+                <div class="underline"></div>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="social-links mb-8">
+              <a href="#" class="social-link" data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-link" data-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" data-tooltip="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+            <div class="info-card p-6 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl text-white">
+              <h3 class="text-xl font-semibold mb-4">Current Availability</h3>
+              <p class="mb-2"><i class="fas fa-calendar-check mr-2"></i> Open for consulting projects</p>
+              <p class="mb-2"><i class="fas fa-clock mr-2"></i> Response time: <24 hours</p>
+              <p><i class="fas fa-map-marker-alt mr-2"></i> Based in Johannesburg, SA</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Animated Footer -->
+      <footer class="mt-24 text-center animate__animated animate__fadeInUp">
+        <div class="footer-wave"></div>
+        <p class="mb-4">Designed & Built with <i class="fas fa-heart text-red-500 animate-pulse"></i> by Poloko Baboile</p>
+        <p class="text-sm opacity-70">© 2023 All rights reserved</p>
+      </footer>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
